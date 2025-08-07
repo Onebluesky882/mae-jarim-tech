@@ -1,0 +1,12 @@
+{
+  "flood_zones": [
+    {
+      "location": "อ.เฉลิมพระเกียรติ",
+      "risk_level": "high"
+    },
+    {
+      "location": "อ.บ่อเกลือ",
+      "risk_level": "medium"
+    }
+  ]
+}
