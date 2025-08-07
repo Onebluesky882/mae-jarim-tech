@@ -1,12 +1,13 @@
-// src/App.jsx
+"use client";
+import flood_output from "@/public/json/flood_output.json";
 import { useEffect, useState } from "react";
-import flood_output from "../../flood_output.json";
 
 type FloodZone = {
   location: string;
   risk_level: string;
 };
-function App() {
+
+function Homepage() {
   const [floodZones, setFloodZones] = useState<FloodZone[]>([]);
 
   useEffect(() => {
@@ -32,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default Homepage;

@@ -8,9 +8,8 @@ simulated_data = {
         {"location": "อ.บ่อเกลือ", "risk_level": "medium"}
     ]
 }
-
-# เขียนออกเป็นไฟล์ GeoJSON แบบเบื้องต้น (หรือ .json)
-with open("flood_output.json", "w", encoding="utf-8") as f:
+output_path = "frontend/public/json/flood_output.json" 
+with open(output_path, "w", encoding="utf-8") as f:
     json.dump(simulated_data, f, ensure_ascii=False, indent=2)
 
 print("✅ Flood simulation complete! Output: flood_output.json")
